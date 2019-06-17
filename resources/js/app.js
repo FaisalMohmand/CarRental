@@ -7,6 +7,11 @@
 require("./bootstrap");
 
 window.Vue = require("vue");
+import { Form, HasError, AlertError } from "vform";
+
+window.Form = Form;
+Vue.component(HasError.name, HasError);
+Vue.component(AlertError.name, AlertError);
 
 import VueRouter from "vue-router";
 Vue.use(VueRouter);
@@ -19,6 +24,11 @@ let routes = [
     {
         path: "/profile",
         component: require("./components/ProfileComponent.vue").default
+    },
+
+    {
+        path: "/users",
+        component: require("./components/UsersComponent.vue").default
     }
 ];
 
