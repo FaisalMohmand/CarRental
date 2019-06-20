@@ -25,6 +25,9 @@
     "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
-    "admin-lte": "^3.0.0-alpha.2"
+    "admin-lte": "^3.0.0-alpha.2",
+    "moment": "^2.24.0",
+    "sweetalert2": "^8.12.1",
+    "vue-progressbar": "^0.7.5"
   }
 }
